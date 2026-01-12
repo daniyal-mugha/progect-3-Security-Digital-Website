@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shah Security & Protection Systems (Pvt) Ltd | Official Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/dist/css/bootstrap.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap');
+        
+        :root {
+            --primary-blue: #0f172a;
+            --accent-blue: #2563eb;
+            --highlight-cyan: #06b6d4;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #f8fafc;
+        }
+
+        .heading-font {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .blue-gradient-text {
+            background: linear-gradient(45deg, #3b82f6, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.9)), 
+                        url('https://images.unsplash.com/photo-1582139329536-e7284fece509?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid var(--accent-blue);
+        }
+
+        .profile-card {
+            background: white;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 1px solid rgba(15, 23, 42, 0.05);
+            overflow: hidden;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+            border-color: var(--accent-blue);
+        }
+
+        .profile-card img {
+            transition: transform 0.5s ease;
+        }
+
+        .profile-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #1e40af 0%, #2563eb 100%);
+            color: white;
+            transition: all 0.3s;
+        }
+
+        .btn-primary:hover {
+            opacity: 0.9;
+            transform: scale(1.05);
+        }
+
+        .btn-whatsapp {
+            background: #25d366;
+            color: white;
+            transition: all 0.3s;
+        }
+
+        .btn-whatsapp:hover {
+            background: #128c7e;
+            transform: scale(1.05);
+        }
+
+        .stat-box {
+            border-left: 4px solid var(--accent-blue);
+            padding-left: 1.5rem;
+        }
+
+        .brand-text-main {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--primary-blue);
+            line-height: 1;
+            letter-spacing: -0.5px;
+        }
+
+        .brand-text-sub {
+            font-size: 9px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #64748b;
+            font-weight: 700;
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25d366;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none !important;
+            font-weight: bold;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .weapon-tag {
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 700;
+            color: #60a5fa;
+            display: inline-block;
+        }
+        
+        .section-img {
+            border-radius: 2rem;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            object-fit: cover;
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/923049352713?text=Asalam-o-Alaikum%20Shah%20Security,%20I%20am%20interested%20in%20your%20services." target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp text-2xl"></i>
+        <span>Chat with Us</span>
+    </a>
+
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex flex-col">
+                <span class="brand-text-main">SHAH SECURITY</span>
+                <span class="brand-text-sub">SP & Protection Systems (Pvt) Ltd</span>
+            </div>
+            <div class="hidden lg:flex space-x-6 items-center">
+                <a href="#about" class="font-semibold text-slate-700 hover:text-blue-600 transition">About Us</a>
+                <a href="#services" class="font-semibold text-slate-700 hover:text-blue-600 transition">Solutions</a>
+                <a href="#expertise" class="font-semibold text-slate-700 hover:text-blue-600 transition">Expertise</a>
+                <a href="https://wa.me/923049352713" target="_blank" class="btn-whatsapp px-5 py-2 rounded-lg text-sm font-bold flex items-center gap-2">
+                    <i class="fab fa-whatsapp"></i> WHATSAPP
+                </a>
+                <a href="tel:02130000000" class="btn-primary px-5 py-2 rounded-lg text-sm font-bold">CALL NOW</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section min-h-screen flex items-center pt-20">
+        <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="text-white">
+                <div class="inline-block px-4 py-1 bg-blue-600/20 border border-blue-500/30 rounded-full text-blue-400 text-xs font-bold tracking-widest uppercase mb-6">
+                    Established 2002
+                </div>
+                <h1 class="heading-font text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                    Protecting <span class="blue-gradient-text">People & Property</span> with Quality.
+                </h1>
+                <p class="text-slate-300 text-lg md:text-xl mb-10 leading-relaxed max-w-xl">
+                    NOC from Govt. of Pakistan. We provide complete security solutions from static guarding to advanced electronic surveillance across Sindh.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="https://wa.me/923049352713" target="_blank" class="btn-whatsapp px-8 py-4 rounded-xl font-bold flex items-center gap-3">
+                        <i class="fab fa-whatsapp text-xl"></i> CONTACT ON WHATSAPP
+                    </a>
+                    <a href="#services" class="btn-primary px-8 py-4 rounded-xl font-bold">VIEW SERVICES</a>
+                </div>
+            </div>
+            <div class="hidden lg:block relative">
+                <div class="absolute -inset-4 bg-blue-600/20 blur-3xl rounded-full"></div>
+                <!-- Image of Security Guard standing alert -->
+                <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=800&q=80" class="relative rounded-3xl border-4 border-white/10 shadow-2xl" alt="Shah Security Services Hero">
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Icons -->
+    <section class="py-12 bg-slate-900 border-y border-white/5">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8 text-center text-white/80">
+                <div class="flex flex-col items-center gap-2">
+                    <i class="fas fa-handshake text-blue-500 text-xl"></i>
+                    <span class="text-xs font-bold tracking-widest uppercase">Integrity</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <i class="fas fa-users text-blue-500 text-xl"></i>
+                    <span class="text-xs font-bold tracking-widest uppercase">Teamwork</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <i class="fas fa-award text-blue-500 text-xl"></i>
+                    <span class="text-xs font-bold tracking-widest uppercase">Quality</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <i class="fas fa-user-shield text-blue-500 text-xl"></i>
+                    <span class="text-xs font-bold tracking-widest uppercase">Safety</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <i class="fas fa-headset text-blue-500 text-xl"></i>
+                    <span class="text-xs font-bold tracking-widest uppercase">Customer Service</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section with Image -->
+    <section id="about" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="heading-font text-4xl md:text-5xl font-bold text-slate-900 mb-8">Introduction & Mission</h2>
+                    <div class="space-y-6 text-slate-600 leading-relaxed text-lg">
+                        <p>
+                            Shah Security was established in <b>2002</b> with an <b>NOC from the Government of Pakistan</b>. Initially starting operations in Sindh with our head office in Karachi.
+                        </p>
+                        <!-- Image of Professional Office/Security Management -->
+                         <img src="AC.png" alt="">
+                            Our mission is to provide the best quality security solutions and be the preferred business partner that helps protect people and property through professional policies.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-slate-50 p-10 rounded-3xl border border-slate-200">
+                    <h3 class="text-2xl font-bold mb-6 text-slate-900">Compliance & Registration</h3>
+                    <!-- Image of Documents/Certificates/NOC -->
+                     <img src="BC.PNG" alt="">
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-file-contract text-blue-600 mt-1"></i>
+                            <div>
+                                <p class="font-bold text-slate-800">NOC Home Department</p>
+                                <p class="text-sm text-slate-500">Government of Sindh approved provider.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-id-card text-blue-600 mt-1"></i>
+                            <div>
+                                <p class="font-bold text-slate-800">FBR Registered</p>
+                                <p class="text-sm text-slate-500">Taxpayer registration and legal compliance.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/923049352713" class="mt-8 w-full btn-whatsapp py-4 rounded-xl font-bold flex justify-center items-center gap-2">
+                        <i class="fab fa-whatsapp"></i> REQUEST DOCS VIA WHATSAPP
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid with Category Images -->
+    <section id="services" class="py-24 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2 class="heading-font text-4xl md:text-5xl font-bold text-slate-900">Security Solutions</h2>
+                <p class="text-slate-500 mt-4 max-w-2xl mx-auto italic">"We never compromise on the quality and the standard of services."</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Static Guarding -->
+                <div class="profile-card rounded-3xl">
+                    <!-- Image of Armed Security Guard -->
+                    <img src="https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?auto=format&fit=crop&w=600&q=80" class="w-full h-48 object-cover" alt="Static Guarding Service">
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold mb-4">Static Guarding</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Manned guarding for public/private organizations using well-established SOPs and vetting.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Executive Protection -->
+                <div class="profile-card rounded-3xl">
+                    <!-- Image of VIP Protection/Bodyguard -->
+                    <img 
+                    src="ttp.jpg"
+                    class="w-full h-48 object-cover" 
+                    alt="Security & Protection Services">
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold mb-4">Executive Protection</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            High-level protection for VIPs and executives with discreet and effective protocols.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CCTV Surveillance -->
+                <div class="profile-card rounded-3xl">
+                    <!-- Image of Security Camera/CCTV -->
+                    <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=600&q=80" class="w-full h-48 object-cover" alt="Electronic Surveillance">
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold mb-4">Electronic Systems</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            CCTV Surveillance, Access Control, and Physical Barrier Systems for complete tech-based security.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Industrial Security -->
+                <div class="profile-card rounded-3xl">
+                    <!-- Image of Industrial Security/Factory -->
+                    <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=600&q=80" class="w-full h-48 object-cover" alt="Industrial Security">
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold mb-4">Industrial Protection</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Specialized security for factories and warehouses to prevent theft and unauthorized access.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Residential Security -->
+                <div class="profile-card rounded-3xl">
+                    <!-- Image of Luxury Residence Security -->
+                    <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=600&q=80" class="w-full h-48 object-cover" alt="Residential Security">
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold mb-4">Residential Assets</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Security for high-rise apartment complexes and private villas with 24/7 gate monitoring.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Rapid Response -->
+                <div class="profile-card rounded-3xl">
+                    <!-- Image of Security Patrol Vehicle -->
+                    <img src="https://images.unsplash.com/photo-1621252179027-94459d278660?auto=format&fit=crop&w=600&q=80" class="w-full h-48 object-cover" alt="Emergency Response">
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold mb-4">Rapid Response</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Dedicated mobile patrol teams for immediate intervention during any security incident.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Operational Strength with Technical Image -->
+    <section id="expertise" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="bg-blue-900 rounded-[3rem] p-12 md:p-20 text-white relative overflow-hidden">
+                <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <h2 class="heading-font text-4xl md:text-5xl font-bold mb-8 leading-tight">Operational Strength</h2>
+                        <div class="space-y-8">
+                            <div>
+                                <h5 class="text-xl font-bold mb-4 text-blue-300">Licensed Weapons Pool (All Sindh)</h5>
+                                <!-- Image of Weaponry/Logistics (Professional Representation) -->
+                                <img src="M.jpg" class="rounded-xl mb-6 h-32 w-full object-cover opacity-80" alt="Equipment Logistics">
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="weapon-tag">.223 AUTOMATIC GUNS</span>
+                                    <span class="weapon-tag">.222 AUTOMATIC GUNS</span>
+                                    <span class="weapon-tag">12 BORE SHOTGUNS</span>
+                                    <span class="weapon-tag">30 BORE PISTOLS</span>
+                                </div>
+                            </div>
+                            
+                            <div class="flex gap-4">
+                                <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-user-check text-blue-400"><img src="Q.PNG" alt=""></i>
+
+                                </div>
+                                <div>
+                                    <h5 class="text-lg font-bold">Vetted Manpower</h5>
+                                    <p class="text-blue-100/60 text-sm">NADRA verification and background checks.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 gap-6">
+                        <!-- Image of Monitoring Center -->
+                         <img src="U.JPG" alt="">
+                        <div class="p-8 bg-white/5 border border-white/10 rounded-2xl">
+                            <h4 class="text-2xl font-bold mb-2">Technical Survey</h4>
+                            <p class="text-blue-100/60 text-sm">We conduct on-site surveys to identify vulnerabilities and suggest the best security mix.</p>
+                            <a href="https://wa.me/923049352713" target="_blank" class="mt-6 w-full btn-whatsapp py-3 rounded-lg font-bold flex justify-center items-center gap-2">
+                                <i class="fab fa-whatsapp text-lg"></i> GET A FREE QUOTE
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Background Decoration -->
+                <div class="absolute top-0 right-0 w-96 h-96 bg-blue-600/20 blur-[120px] rounded-full -mr-48 -mt-48"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-white pt-20 pb-10">
+        <div class="container mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-12 border-b border-white/5 pb-16">
+            <div class="md:col-span-2">
+                <div class="brand-container mb-8">
+                    <span class="text-2xl font-bold text-white">SHAH SECURITY</span>
+                    <p class="text-blue-400 text-[10px] tracking-[3px] font-bold">SP & PROTECTION SYSTEMS (PVT) LTD</p>
+                </div>
+                <p class="text-slate-500 text-sm leading-relaxed max-w-sm mb-6">
+                    A complete security services provider operating in Sindh since 2002.
+                </p>
+                <div class="flex gap-4">
+                    <a href="https://wa.me/923049352713" class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center text-slate-400 hover:text-green-500 transition border border-white/10">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="font-bold text-blue-500 mb-6 uppercase tracking-widest text-xs">Solutions</h4>
+                <ul class="text-slate-400 space-y-4 text-sm">
+                    <li><a href="#services" class="hover:text-white transition">Armed Guards</a></li>
+                    <li><a href="#services" class="hover:text-white transition">CCTV Systems</a></li>
+                    <li><a href="#expertise" class="hover:text-white transition">Risk Assessment</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-blue-500 mb-6 uppercase tracking-widest text-xs">Head Office</h4>
+                <p class="text-slate-400 text-sm mb-2">Karachi, Sindh, Pakistan</p>
+                <a href="https://wa.me/923049352713" target="_blank" class="text-blue-200 font-bold text-sm block hover:underline underline-offset-4">+923049352713</a>
+            </div>
+        </div>
+        <div class="container mx-auto px-8 mt-10 flex flex-col md:flex-row justify-between items-center text-slate-600 text-[10px] uppercase tracking-[0.2em]">
+            <p>&copy; 2026 Shah Security & Protection Systems Pvt. Ltd.</p>
+            <p>Quality | Integrity | Safety</p>
+        </div>
+    </footer>
+
+</body>
+</html> 
